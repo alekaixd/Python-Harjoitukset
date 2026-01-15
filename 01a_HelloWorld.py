@@ -1,1 +1,2 @@
-print("Hei Maailma :)")
+name = input("Mikä on nimesi? ")
+print(f"Hei {name} :)")
