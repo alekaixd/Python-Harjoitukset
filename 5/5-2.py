@@ -8,5 +8,5 @@ while (True):
     luvut.append(int(i))
 luvut.sort(reverse=True)
 
-for n in luvut:
-    print(n)
+for n in range(5):
+    print(luvut[n])
