@@ -12,18 +12,17 @@ class Auto:
         if self.nopeus > self.huippuNopeus:
             self.nopeus = self.huippuNopeus
 
+    def kulje(self, aika: float):
+        self.kuljettuMatka += self.nopeus * aika
+
 
 def Main():
     mazdamx5 = Auto("ABC-123", 142)
-    mazdamx5.accelerate(30)
-    mazdamx5.accelerate(70)
-    mazdamx5.accelerate(50)
+    mazdamx5.accelerate(60)
+    mazdamx5.kulje(1.5)
 
-    print(f"{mazdamx5.nopeus} km/h")
-
-    mazdamx5.accelerate(-200)
-
-    print(f"{mazdamx5.nopeus} km/h")
+    print(f"nopeus: {mazdamx5.nopeus} km/h")
+    print(f"kuljettu matka: {mazdamx5.kuljettuMatka} km")
 
 
 Main()
